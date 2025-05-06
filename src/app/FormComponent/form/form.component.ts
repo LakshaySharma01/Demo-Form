@@ -11,7 +11,12 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
 export class FormComponent { 
   registrationForm = new FormGroup({
     fullName: new FormControl('',Validators.required),
-    lastName: new FormControl(''),
+    emailAddress: new FormControl('',Validators.required),
+    pass: new FormControl('',Validators.required),
+    confirmPass: new FormControl('',Validators.required),
+    Address1: new FormControl('',Validators.required),
+    Address2:new FormControl('',Validators.required),
+    ZipCode:new FormControl('',Validators.required),
   })
 
   public registrationFormSubmit(){

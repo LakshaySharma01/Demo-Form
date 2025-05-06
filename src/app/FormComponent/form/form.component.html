@@ -11,7 +11,6 @@
           id="fullName"
           class="form-control"
           placeholder="Enter your full name"
-          required
           formControlName="fullName"
         />
       </div>
@@ -24,7 +23,7 @@
           id="email"
           class="form-control"
           placeholder="Enter your email"
-          required
+          formControlName="emailAddress"
         />
       </div>
 
@@ -36,7 +35,7 @@
           id="password"
           class="form-control"
           placeholder="Enter your password"
-          required
+          formControlName="pass"
         />
       </div>
 
@@ -45,26 +44,26 @@
         <label for="confirmPassword" class="form-label">Confirm Password</label>
         <input
           type="password"
-          id="password"
+          id="confirmPassword"
           class="form-control"
           placeholder="Enter your password"
-          required
+          formControlName="confirmPass"
         />
       </div>
 
       <!-- Address -->
       <div class="mb-3">
         <label class="form-label">Address</label>
-        <input type="text" class="form-control mb-2" placeholder="Street" />
-        <input type="text" class="form-control mb-2" placeholder="City" />
+        <input type="text" class="form-control mb-2" placeholder="Street" formControlName="Address1"/>
+        <input type="text" class="form-control mb-2" placeholder="City" formControlName="Address2"/>
         <input
           type="text"
           class="form-control"
           placeholder="ZIP Code"
           maxlength="6"
           pattern="^\d{6}$"
-          required
           title="Please enter exactly 6 digits"
+          formControlName="ZipCode"
         />
       </div>
 

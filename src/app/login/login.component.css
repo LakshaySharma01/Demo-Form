@@ -1,0 +1,15 @@
+.back{
+    display: flex;
+    height: 100vh; /* full screen height */
+    
+    background-image: url('https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2655.jpg?t=st=1746604487~exp=1746608087~hmac=2f955b02b32df30f5b66b4ed46cf704d6abf18a2a64bd77d6f0a0ef9c97631ec&w=2000'); /* replace with real image URL */
+    background-size: cover;       /* cover the entire container */
+    background-position: center;  /* center the image */
+    background-repeat: no-repeat;
+}
+.logincard {
+    
+    border-radius: 30px;
+    background: #c2ebd1;
+    
+}

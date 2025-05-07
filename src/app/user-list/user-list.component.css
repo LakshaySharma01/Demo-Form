@@ -1,0 +1,17 @@
+.list{
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centers the element */
+  
+  padding: 30px;
+  border-radius: 20px;
+
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e25ec1, #5b69aa);
+  color: white;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* subtle shadow */
+  text-align: left;
+  min-width: 300px;
+}

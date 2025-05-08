@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-
+import { NgClass } from '@angular/common';
 @Component({
   selector: 'app-form',
   standalone: true,
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css'], 
-  imports:[ReactiveFormsModule]
+  imports:[ReactiveFormsModule , NgClass]
 })
 export class FormComponent { 
   registrationForm = new FormGroup({

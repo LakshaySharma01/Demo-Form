@@ -16,7 +16,7 @@ export class WeatherComponent {
 
   constructor(private weatherService: WeatherService) {}
 
-  ngOnInit() {}
+  ngOnInit() {} //Life cycle hook
 
   getWeather() {
     this.weatherService.getweather(this.city).subscribe((data) => {

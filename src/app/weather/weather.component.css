@@ -1,0 +1,169 @@
+/* Enhanced body styling with a gradient background */
+body {
+    font-family: 'Nunito', sans-serif; /* A friendly and modern font */
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%); /* Soft blue gradient */
+    color: #4a4a4a; /* Slightly lighter dark text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  
+  /* Sleek container with a frosted glass effect */
+  div {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+    width: 90%;
+    max-width: 550px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+  }
+  
+  /* Elegant heading with a subtle text shadow */
+  h1 {
+    color: #3867d6; /* A vibrant blue */
+    margin-bottom: 30px;
+    font-size: 2.8em;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Form with improved layout */
+  form {
+    display: grid;
+    gap: 25px;
+  }
+  
+  /* Input field with a soft glow on focus */
+  input[type="text"] {
+    padding: 16px;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    font-size: 1.1em;
+    color: #555;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #63ace5; /* A lighter blue for focus */
+    box-shadow: 0 0 12px rgba(99, 172, 229, 0.4);
+  }
+  
+  /* Button with a gradient and a more pronounced hover effect */
+  button {
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* Turquoise gradient */
+    color: white;
+    padding: 16px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #2193b0, #6dd5ed); /* Reverse gradient on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  button:active {
+    transform: translateY(0); /* Reset lift on active */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Weather data display with a clean layout and subtle animations */
+  .weatherData {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .weatherData h2 {
+    color: #2c3e50; /* Darker, sophisticated color */
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 2.4em;
+    font-weight: 600;
+  }
+  
+  .weatherData p {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 1.15em;
+    line-height: 1.6;
+  }
+  
+  .weatherData p strong {
+    font-weight: 600;
+    color: #3867d6; /* Highlight important information */
+  }
+  
+  .weatherData p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 600px) {
+    div {
+      padding: 30px;
+      width: 95%;
+    }
+  
+    h1 {
+      font-size: 2.4em;
+      margin-bottom: 25px;
+    }
+  
+    input[type="text"],
+    button {
+      padding: 14px;
+      font-size: 1em;
+    }
+  
+    .weatherData {
+      margin-top: 30px;
+      padding: 20px;
+    }
+  
+    .weatherData h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+  
+    .weatherData p {
+      font-size: 1.05em;
+    }
+  }
+  .back{
+    display: flex;
+    height: 100vh; /* full screen height */
+    
+    background-image: url('https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2655.jpg?t=st=1746604487~exp=1746608087~hmac=2f955b02b32df30f5b66b4ed46cf704d6abf18a2a64bd77d6f0a0ef9c97631ec&w=2000'); /* replace with real image URL */
+    background-size: cover;       /* cover the entire container */
+    background-position: center;  /* center the image */
+    background-repeat: no-repeat;
+  }
+  

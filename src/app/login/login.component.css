@@ -7,8 +7,9 @@
     background-position: center;  /* center the image */
     background-repeat: no-repeat;
 }
-.card {
-
-    border-radius: 20px;
+.logincard {
+    
+    border-radius: 30px;
     background: #c2ebd1;
+    
 }
